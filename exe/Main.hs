@@ -6,6 +6,7 @@ import KthElem
 import NumElems
 import Reverse
 import IsPalindrome
+import RemoveDupes
 
 main :: IO ()
 main = do
@@ -30,4 +31,7 @@ main = do
   putStrLn "Q7. Flatten Nested List"
   putStrLn "Omitted"
   -- print $ flatten (List [Elem 1, List [Elem 2, List [Elem 3, Elem 4], Elem 5]])
+
+  putStrLn "Q8. Remove Consecutive Duplicates"
+  print $ removeDupes "aaaabccccddeeeeeee"
 

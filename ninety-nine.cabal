@@ -21,6 +21,6 @@ executable ninety-nine
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Last, LastButOne, KthElem, NumElems, Reverse, IsPalindrome, Flatten
+  exposed-modules:     Last, LastButOne, KthElem, NumElems, Reverse, IsPalindrome, Flatten, RemoveDupes
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
