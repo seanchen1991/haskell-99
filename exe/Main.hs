@@ -7,6 +7,7 @@ import NumElems
 import Reverse
 import IsPalindrome
 import RemoveDupes
+import Pack
 
 main :: IO ()
 main = do
@@ -34,4 +35,7 @@ main = do
 
   putStrLn "Q8. Remove Consecutive Duplicates"
   print $ removeDupes "aaaabccccddeeeeeee"
+
+  putStrLn "Q9. Dupes to Sublists"
+  print $ pack ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
 
