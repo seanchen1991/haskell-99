@@ -6,9 +6,21 @@ module RunLengthEncoding (runLengthEncoding) where
 
 import Data.List
 
-runLengthEncoding :: Eq a => [a] -> [(Int, a)]
+data ListItem a = Single a | Multiple Int a
+    deriving (Show)
 
---runLengthEncoding l = map (\x -> (length x, head x)) (group l)
+runLengthEncoding :: Eq a => [a] -> [ListItem a]
 
-runLengthEncoding l = map encode $ group l
-    where encode x = (length x, head x)
+--encode l = map (\x -> (length x, head x)) (group l)
+
+--runLengthEncoding = map func . encode
+--    where func (1,x) = Single x
+--          func (n,x) = Multiple n x
+
+runLengthEncoding [] = []
+runLengthEncoding (x:xs)
+    | count == 1 = (Single x) : (runLengthEncoding xs)
+    | otherwise = (Multiple count x) : (runLengthEncoding rest)
+    where
+        (matched, rest) = span (==x) xs
+        count = 1 + (length matched)

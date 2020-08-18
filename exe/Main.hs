@@ -9,6 +9,8 @@ import IsPalindrome
 import RemoveDupes
 import Pack
 import RunLengthEncoding
+import DecodeEncoding
+import Duplicate
 
 main :: IO ()
 main = do
@@ -41,4 +43,12 @@ main = do
   print $ pack ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
 
   putStrLn "Q10. Run Length Encoding"
-  print $ runLengthEncoding ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
+  print $ runLengthEncoding ['a','a','a','z', 'a','b','c','c','a','a','d','e','e','e','e']
+
+  putStrLn "Q12. Decode Encoding"
+  print $ decode [(4, 'a'), (1, 'b'), (2, 'c'), (2, 'a'), (1, 'd'), (4, 'e')]
+
+  putStrLn "Q14. Duplicate List Elements"
+  print $ dupe [1, 2, 3]
+
+
