@@ -11,6 +11,8 @@ import Pack
 import RunLengthEncoding
 import DecodeEncoding
 import Duplicate
+import Replicate
+import DropEvery
 
 main :: IO ()
 main = do
@@ -51,4 +53,8 @@ main = do
   putStrLn "Q14. Duplicate List Elements"
   print $ dupe [1, 2, 3]
 
+  putStrLn "Q15. Replicate Elements N Times"
+  print $ repli "abc" 3
 
+  putStrLn "Q16. Drop Every Nth Element"
+  print $ dropEvery "abcdefghij" 3
