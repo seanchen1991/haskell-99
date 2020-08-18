@@ -27,3 +27,7 @@ main = do
   putStrLn "Q6. Is List a Palindrome"
   print $ isPalindrome [1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,1]
 
+  putStrLn "Q7. Flatten Nested List"
+  putStrLn "Omitted"
+  -- print $ flatten (List [Elem 1, List [Elem 2, List [Elem 3, Elem 4], Elem 5]])
+
