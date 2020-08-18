@@ -8,6 +8,7 @@ import Reverse
 import IsPalindrome
 import RemoveDupes
 import Pack
+import RunLengthEncoding
 
 main :: IO ()
 main = do
@@ -39,3 +40,5 @@ main = do
   putStrLn "Q9. Dupes to Sublists"
   print $ pack ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
 
+  putStrLn "Q10. Run Length Encoding"
+  print $ runLengthEncoding ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
