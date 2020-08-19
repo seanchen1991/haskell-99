@@ -24,6 +24,6 @@ library
   exposed-modules:     Last, LastButOne, KthElem, NumElems, 
                        Reverse, IsPalindrome, Flatten, RemoveDupes, 
                        Pack, RunLengthEncoding, DecodeEncoding, Duplicate
-                       Replicate, DropEvery, Split
+                       Replicate, DropEvery, Split, Slice
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010

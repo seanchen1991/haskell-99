@@ -14,6 +14,7 @@ import Duplicate
 import Replicate 
 import DropEvery 
 import Split
+import Slice
 
 main :: IO ()
 main = do
@@ -62,3 +63,6 @@ main = do
 
   putStrLn "Q17. Split List at N"
   print $ split "abcdefghij" 3
+
+  putStrLn "Q18. Extract Slice from List"
+  print $ slice "abcdefghijk" 3 7
