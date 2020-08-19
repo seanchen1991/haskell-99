@@ -15,6 +15,7 @@ import Replicate
 import DropEvery 
 import Split
 import Slice
+import Rotate
 
 main :: IO ()
 main = do
@@ -66,3 +67,6 @@ main = do
 
   putStrLn "Q18. Extract Slice from List"
   print $ slice "abcdefghijk" 3 7
+
+  putStrLn "Q19. Rotate List N Places to Left"
+  print $ rotate "abcdefgh" 3

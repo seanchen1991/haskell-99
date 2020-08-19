@@ -25,5 +25,6 @@ library
                        Reverse, IsPalindrome, Flatten, RemoveDupes, 
                        Pack, RunLengthEncoding, DecodeEncoding, Duplicate
                        Replicate, DropEvery, Split, Slice
+                       Rotate
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
