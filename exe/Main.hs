@@ -11,8 +11,9 @@ import Pack
 import RunLengthEncoding
 import DecodeEncoding
 import Duplicate
-import Replicate
-import DropEvery
+import Replicate 
+import DropEvery 
+import Split
 
 main :: IO ()
 main = do
@@ -58,3 +59,6 @@ main = do
 
   putStrLn "Q16. Drop Every Nth Element"
   print $ dropEvery "abcdefghij" 3
+
+  putStrLn "Q17. Split List at N"
+  print $ split "abcdefghij" 3
