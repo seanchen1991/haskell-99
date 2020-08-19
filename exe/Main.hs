@@ -16,6 +16,7 @@ import DropEvery
 import Split
 import Slice
 import Rotate
+import Remove
 
 main :: IO ()
 main = do
@@ -70,3 +71,6 @@ main = do
 
   putStrLn "Q19. Rotate List N Places to Left"
   print $ rotate "abcdefgh" 3
+
+  putStrLn "Q20. Remove Kth from List"
+  print $ removeAt 2 "abcd"
