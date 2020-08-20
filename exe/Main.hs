@@ -17,6 +17,7 @@ import Split
 import Slice
 import Rotate
 import Remove
+import InsertAt
 
 main :: IO ()
 main = do
@@ -74,3 +75,6 @@ main = do
 
   putStrLn "Q20. Remove Kth from List"
   print $ removeAt 2 "abcd"
+
+  putStrLn "Q21. Insert Element at Given Position"
+  print $ insertAt 'X'"abcd" 2 
