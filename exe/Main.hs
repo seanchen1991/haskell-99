@@ -21,6 +21,7 @@ import InsertAt
 import Range
 import RandSelect
 import RandRange
+import SublistSort
 
 main :: IO ()
 main = do
@@ -91,6 +92,7 @@ main = do
   putStrLn "Q24. Draw N Random Numbers from a Range"
   -- randRange 5 49 >>= putStrLn
 
-
+  putStrLn "Q28. Sort List of Lists According to Length of Sublists"
+  print $ lsort ["abc","de","fgh","de","ijkl","mn","o"]
   
 
