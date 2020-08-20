@@ -18,6 +18,7 @@ import Slice
 import Rotate
 import Remove
 import InsertAt
+import Range
 
 main :: IO ()
 main = do
@@ -78,3 +79,9 @@ main = do
 
   putStrLn "Q21. Insert Element at Given Position"
   print $ insertAt 'X'"abcd" 2 
+
+  putStrLn "Q22. Create Range"
+  print $ range 5 10
+
+
+
