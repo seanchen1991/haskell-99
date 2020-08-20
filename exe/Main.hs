@@ -20,6 +20,7 @@ import Remove
 import InsertAt
 import Range
 import RandSelect
+import RandRange
 
 main :: IO ()
 main = do
@@ -85,5 +86,11 @@ main = do
   print $ range 5 10
 
   putStrLn "Q23. Extract N Random Elements from List"
-  -- randSelect "abcdefghij" 3
+  randSelect "abcdefghij" 3 >>= putStrLn
+
+  putStrLn "Q24. Draw N Random Numbers from a Range"
+  -- randRange 5 49 >>= putStrLn
+
+
+  
 
