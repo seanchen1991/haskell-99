@@ -19,6 +19,7 @@ import Rotate
 import Remove
 import InsertAt
 import Range
+import RandSelect
 
 main :: IO ()
 main = do
@@ -83,5 +84,6 @@ main = do
   putStrLn "Q22. Create Range"
   print $ range 5 10
 
-
+  putStrLn "Q23. Extract N Random Elements from List"
+  -- randSelect "abcdefghij" 3
 
