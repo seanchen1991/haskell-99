@@ -22,6 +22,7 @@ import Range
 import RandSelect
 import RandRange
 import SublistSort
+import IsPrime
 
 main :: IO ()
 main = do
@@ -95,4 +96,6 @@ main = do
   putStrLn "Q28. Sort List of Lists According to Length of Sublists"
   print $ lsort ["abc","de","fgh","de","ijkl","mn","o"]
   
+  putStrLn "Q31. Determine Whether a Number is Prime"
+  print $ isPrime 23
 
